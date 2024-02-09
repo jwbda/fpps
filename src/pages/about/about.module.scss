@@ -1,0 +1,38 @@
+// form {
+//   text-align: center;
+// }
+
+// .formContainer {
+//   form {
+//     text-align: center;
+//   }
+// }
+
+.formContainer {
+  >div {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+
+    >div {
+      display: flex;
+      align-items: center;
+      width: 250px;
+
+
+      label {
+        text-align: right;
+        width: 70px;
+      }
+
+      input {
+        flex: 1;
+      }
+    }
+  }
+
+  button {
+    margin-top: 10px;
+    padding: 5px 10px;
+  }
+}
