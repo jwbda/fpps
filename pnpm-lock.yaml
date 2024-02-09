@@ -34,6 +34,9 @@ devDependencies:
   '@types/react':
     specifier: 18.2.53
     version: 18.2.53
+  husky:
+    specifier: ^9.0.10
+    version: 9.0.10
   typescript:
     specifier: 5.3.3
     version: 5.3.3
@@ -723,6 +726,15 @@ packages:
     engines: { node: '>= 0.4' }
     dependencies:
       function-bind: 1.1.2
+    dev: true
+
+  /husky@9.0.10:
+    resolution:
+      {
+        integrity: sha512-TQGNknoiy6bURzIO77pPRu+XHi6zI7T93rX+QnJsoYFf3xdjKOur+IlfqzJGMHIK/wXrLg+GsvMs8Op7vI2jVA==,
+      }
+    engines: { node: '>=18' }
+    hasBin: true
     dev: true
 
   /is-binary-path@2.1.0:
