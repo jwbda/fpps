@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+  <head>
+    <title>My first styled page</title>
+    <style>
+      /*
+              弹性布局（Flexbox）：弹性布局是一种用来进行一维布局的技术，允许开发者在水平或垂直方向上进行弹性布局。通过设置容器的 display 属性为 flex 或 inline-flex，以及相关的属性如 justify-content、align-items 等，可以创建灵活的布局结构，更好地支持页面在不同屏幕尺寸上的适配。
+
+      网格布局（Grid Layout）：CSS 网格布局是一种二维布局技术，允许开发者以网格形式在页面上定位和排列元素。通过使用 grid-template-columns、grid-template-rows 等属性，开发者可以定义网格的列数和行数，以及各个单元格的大小和间距。这使得构建复杂的布局变得更加容易和灵活。
+      */
+      .font-size-50 {
+        font-size: 10px;
+      }
+
+      .container1 {
+        /*弹性布局*/
+        display: flex;
+        justify-content: center;
+        width: 500px;
+        height: 500px;
+        background-color: aqua;
+        align-items: center;
+      }
+
+      .container {
+        /*弹性布局*/
+        display: grid;
+        /*fr 剩余单位*/
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 100px;
+        /* grid-template-rows: 100px 200px; */
+      }
+
+      .element {
+        /* 其他样式 */
+        flex: 1;
+      }
+
+      .element {
+        grid-column: 2 / 4;
+        grid-row: 1 / 2;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Site navigation menu -->
+    <ul class="navbar">
+      <li><a class="font-size-50" href="index.html">Home page</a></li>
+      <li><a href="musings.html">Musings</a></li>
+      <li><a href="town.html">My town</a></li>
+      <li><a href="links.html">Links</a></li>
+    </ul>
+
+    <!-- Main content -->
+    <h1>My first styled page</h1>
+
+    <p>Welcome to my styled page!</p>
+
+    <p>
+      It lacks images, but at least it has style. And it has links, even if they
+      don't go anywhere&hellip;
+    </p>
+
+    <p>
+      There should be more here, but I don't know what yet.
+
+      <!-- Sign and date the page, it's only polite! -->
+    </p>
+
+    <address>
+      Made 5 April 2004<br />
+      by myself.
+    </address>
+
+    <div class="container">
+      <div class="element">777</div>
+      <div class="element">777</div>
+      <div class="element">777</div>
+      <div class="element">777</div>
+      <div class="element">777</div>
+    </div>
+  </body>
+</html>
