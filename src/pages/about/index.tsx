@@ -47,7 +47,7 @@ export default function About() {
             </label>
             <input
               name="username"
-            // style={{ flex: '1' }}
+              // style={{ flex: '1' }}
             />
           </div>
         </div>
@@ -70,14 +70,14 @@ export default function About() {
             <input
               name="password"
               type="password"
-            // style={{ flex: '1' }}
+              // style={{ flex: '1' }}
             />
           </div>
         </div>
 
         <button
           type="submit"
-        // style={{ marginTop: '10px', padding: '5px 10px' }}
+          // style={{ marginTop: '10px', padding: '5px 10px' }}
         >
           Submit
         </button>

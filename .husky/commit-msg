@@ -1,2 +1,0 @@
-#!/bin/sh
-echo "$1" >.git/COMMIT_EDITMSG
