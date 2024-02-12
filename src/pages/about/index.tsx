@@ -25,62 +25,26 @@ export default function About() {
       });
   };
 
-  //      {/* <form onSubmit={handleSubmit} style={{ textAlign: 'center' }}> */}
-
   return (
     <>
       <h2 style={{ textAlign: 'center', marginBottom: '20px' }}>Login Form</h2>
       <form onSubmit={handleSubmit} className={aboutStyles.formContainer}>
-        <div
-        // style={{
-        //   display: 'flex',
-        //   justifyContent: 'center',
-        //   marginBottom: '15px',
-        // }}
-        >
-          <div
-          // style={{ display: 'flex', alignItems: 'center', width: '250px' }}
-          >
-            <label // style={{ textAlign: 'right', width: '70px' }}
-            >
-              用户名:&nbsp;
-            </label>
-            <input
-              name="username"
-              // style={{ flex: '1' }}
-            />
-          </div>
+        <div className={aboutStyles.username}>
+          <label>用户名:&nbsp;</label>
+          <input name="username" />
         </div>
 
-        <div
-        // style={{
-        //   display: 'flex',
-        //   justifyContent: 'center',
-        //   marginBottom: '15px',
-        // }}
-        >
-          <div
-          // style={{ display: 'flex', alignItems: 'center', width: '250px' }}
-          >
-            <label
-            //style={{ textAlign: 'right', width: '70px' }}
-            >
-              密&nbsp;&nbsp;&nbsp;&nbsp;码:&nbsp;
-            </label>
-            <input
-              name="password"
-              type="password"
-              // style={{ flex: '1' }}
-            />
-          </div>
+        <div className={aboutStyles.password}>
+          <label>密&nbsp;&nbsp;&nbsp;&nbsp;码:&nbsp;</label>
+          <input name="password" type="password" />
         </div>
 
-        <button
-          type="submit"
-          // style={{ marginTop: '10px', padding: '5px 10px' }}
-        >
-          Submit
-        </button>
+        <div className={aboutStyles.submit}>
+          <div>
+            <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+            <button type="submit">Submit</button>
+          </div>
+        </div>
       </form>
     </>
   );

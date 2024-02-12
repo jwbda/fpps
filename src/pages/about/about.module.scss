@@ -1,37 +1,56 @@
-// form {
-//   text-align: center;
+// flex
+.username {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+// password
+.password {
+  display: flex;
+  justify-content: center;
+  // align-self: center;
+  // grid-row: 2;
+  margin-bottom: 15px;
+}
+
+// submit
+.submit {
+  display: flex;
+  margin-bottom: 15px;
+  justify-content: center;
+}
+
+.submit div {
+  display: flex;
+  justify-content: flex-end;
+  width: 226px;
+}
+
+.submit button {
+  width: 170.21px;
+}
+
+// grid
+// .divClass {
+//   box-sizing: border-box;
+//   display: grid;
+//   grid-template-columns: 1fr 1fr;
+//   justify-content: center;
 // }
 
 // .formContainer {
-//   form {
-//     text-align: center;
-//   }
+
+//   // grid-template-columns: 1fr 1fr;
+
+//   // align-self: center;
+//   // align-items: center;
 // }
 
-.formContainer {
-  > div {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 15px;
+// .username>label {
+//   grid-column: 1;
+// }
 
-    > div {
-      display: flex;
-      align-items: center;
-      width: 250px;
-
-      label {
-        text-align: right;
-        width: 70px;
-      }
-
-      input {
-        flex: 1;
-      }
-    }
-  }
-
-  button {
-    margin-top: 10px;
-    padding: 5px 10px;
-  }
-}
+// .username>input {
+//   grid-column: 1;
+// }
