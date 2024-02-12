@@ -27,7 +27,8 @@ export default function About() {
 
   return (
     <>
-      <h2 style={{ textAlign: 'center', marginBottom: '20px' }}>Login Form</h2>
+      {/* flex */}
+      {/* <h2 style={{ textAlign: 'center', marginBottom: '20px' }}>Login Form</h2>
       <form onSubmit={handleSubmit} className={aboutStyles.formContainer}>
         <div className={aboutStyles.username}>
           <label>用户名:&nbsp;</label>
@@ -45,7 +46,22 @@ export default function About() {
             <button type="submit">Submit</button>
           </div>
         </div>
-      </form>
+      </form> */}
+
+      <h2 style={{ textAlign: 'center', marginBottom: '20px' }}>Login Form</h2>
+      <form onSubmit={handleSubmit} >
+        <div className={aboutStyles.formContainer}>
+          <label className={aboutStyles.usernameLabel}>用户名:&nbsp;</label>
+          <input name="username" className={aboutStyles.usernameInput} />
+
+          <label className={aboutStyles.passwordLabel}>密&nbsp;&nbsp;&nbsp;&nbsp;码:&nbsp;</label>
+          <input name="password" type="password" className={aboutStyles.passwordInput} />
+
+          <label className={aboutStyles.submitLabel}>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+          <button type="submit" className={aboutStyles.submitButton}>Submit</button>
+
+        </div>
+      </form >
     </>
   );
 }

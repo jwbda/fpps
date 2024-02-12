@@ -1,56 +1,81 @@
-// flex
-.username {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 15px;
-}
+// // flex
+// .username {
+//   display: flex;
+//   justify-content: center;
+//   margin-bottom: 15px;
+// }
 
-// password
-.password {
-  display: flex;
-  justify-content: center;
-  // align-self: center;
-  // grid-row: 2;
-  margin-bottom: 15px;
-}
+// // password
+// .password {
+//   display: flex;
+//   justify-content: center;
+//   // align-self: center;
+//   // grid-row: 2;
+//   margin-bottom: 15px;
+// }
 
-// submit
-.submit {
-  display: flex;
-  margin-bottom: 15px;
-  justify-content: center;
-}
-
-.submit div {
-  display: flex;
-  justify-content: flex-end;
-  width: 226px;
-}
-
-.submit button {
-  width: 170.21px;
-}
-
-// grid
-// .divClass {
-//   box-sizing: border-box;
-//   display: grid;
-//   grid-template-columns: 1fr 1fr;
+// // submit
+// .submit {
+//   display: flex;
+//   margin-bottom: 15px;
 //   justify-content: center;
 // }
 
-// .formContainer {
-
-//   // grid-template-columns: 1fr 1fr;
-
-//   // align-self: center;
-//   // align-items: center;
+// .submit div {
+//   display: flex;
+//   justify-content: flex-end;
+//   width: 226px;
 // }
 
-// .username>label {
-//   grid-column: 1;
+// .submit button {
+//   width: 170.21px;
 // }
 
-// .username>input {
-//   grid-column: 1;
+
+////// grid .divClass {
+//   box-sizing: border-box;
+//   display: grid;
+//   grid-template-columns: auto-flow 1fr 1fr;
+//   justify-content: center;
 // }
+
+.formContainer {
+  display: grid;
+  grid-template-columns: 250px 250px;
+
+  // justify-items: center;
+  /* 水平居中 方法1*/
+  // margin: 0 auto;
+  // width: 500px;
+
+  // 水平居中: 方法2
+  justify-content: center;
+
+  // height: 500px;
+}
+
+.usernameLabel {
+  justify-self: end;
+}
+
+.usernameInput {
+  justify-self: start;
+}
+
+.passwordLabel {
+  justify-self: end;
+}
+
+.passwordInput {
+  justify-self: start;
+}
+
+.submitLabel {
+  justify-self: end;
+}
+
+.submitButton {
+  justify-self: start;
+  width: 177px;
+  height: 21px;
+}
