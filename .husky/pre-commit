@@ -1,2 +1,9 @@
 #!/usr/bin/env sh
-pnpm run lint
+# . "$(dirname -- "$0")/_/husky.sh"
+
+# # npm test
+# npx lint-staged
+
+. "$(dirname -- "$0")/_/husky.sh"
+
+npm run lint-staged
